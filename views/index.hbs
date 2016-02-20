@@ -1,0 +1,27 @@
+<div id="header-bar">
+	<h1 id="page-title">Tweets from @{{handle}}</h1>
+</div>
+<div>
+	<ul class="page-columns">
+	   {{#each tweets}}
+	        <li>
+	        	<div class="tweet-container">
+
+	        		<div class="tweet">
+	        			<div class="profile-data">
+	        				<img class="profile-image" src="{{user.profile_image_url_https}}" alt="{{user.name}} profile image" title="profile image"/>
+	        				<span class="user">{{user.name}}</span>
+	        				<span class="handle">@{{user.screen_name}}</span>
+	        				<span class="break"> - </span>
+	        				<span class="posted-date">{{created_at}}</span>
+	        			</div>
+	        			<div class="tweet-text">
+	        				<p>{{{text}}}</p>
+	        			</div>
+	        		</div>
+	        	</div>
+	        </li>
+	    {{/each}}
+	</ul>
+</div>
+

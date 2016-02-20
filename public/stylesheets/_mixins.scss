@@ -1,0 +1,5 @@
+@mixin columns($value) {
+	-webkit-column-count: $value;
+    -moz-column-count: $value;
+    column-count: $value;
+}

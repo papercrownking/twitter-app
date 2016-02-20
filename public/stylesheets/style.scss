@@ -1,0 +1,69 @@
+@import 'variables';
+@import 'attributes';
+@import 'elements';
+@import 'mixins';
+
+#header-bar {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 70px;
+	background-color: $blue;
+	color: $white;
+	h1 {
+		font-family: 'Gotham-Thin';
+		padding: 15px 0px 2px 20px;
+		@media screen and (max-width: $small-screen-width) {
+			font-size: 22px;
+		}
+	}
+}
+
+.page-columns {
+  @media screen and (max-width: $small-screen-width) {
+  	@include columns(1); 
+  }
+  @media screen and (min-width: $large-screen-width) {
+  	@include columns(2); 
+  }
+}
+
+.tweet {
+	position: relative;
+	margin-left: 58px;
+	.profile-data {
+		.profile-image {
+		    float: left;
+    		margin-top: 3px;
+    		margin-left: -58px;
+    		border-radius: 3px;
+		}
+		.user {
+			font-weight: bold;
+		}
+		.break {
+			color: $dark-grey;		
+		}
+		.handle {
+			color: $dark-grey;
+			padding: 0px 4px 0px 4px;
+		}
+	}
+	.tweet-text {
+		p {
+			padding: 5px 0px 5px 0px;
+		}
+	}
+}
+
+
+.tweet-container {
+	font-size:14px;
+}
+
+.posted-date {
+	padding: 2px 0px 2px 0px;
+	color: $dark-grey;
+	font-size: 12px;
+}
