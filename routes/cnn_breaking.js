@@ -14,9 +14,8 @@ router.get('/', function(req, res, next) {
 	  		tweets: result.data 
 	  	});	
   	} else {
-  		console.log(result);
-  	  	res.render('error', { 
-  	  		handle: twitterHandle,
+  	  res.render('error', { 
+  	  	handle: twitterHandle,
 	  		status: result.status.code, 
 	  		message: result.status.reason 
 	  	});			
