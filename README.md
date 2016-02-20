@@ -26,10 +26,10 @@ grunt
 ##Further development
 
 This application requires further development past the 24hour period. this would include:
-1) Improved data validation on the request parameters
-2) Movement of sensitive config to a seperate file that is referenced with runtime vars.
-3) Cross-browser CSS implemention on the front-end.
-4) Improved front-end graphics & performance.
-5) Reduction in the cyclomatic complexity of the API get function.
-6) Improved code coverage with the target being > 80%.
-7) Integration testing through creating a tunnel to saucelabs/browserstack.
+* Improved data validation on the request parameters
+* Movement of sensitive config to a seperate file that is referenced with runtime vars.
+* Cross-browser CSS implemention on the front-end.
+* Improved front-end graphics & performance.
+* Reduction in the cyclomatic complexity of the API get function.
+* Improved code coverage with the target being > 80%.
+* Integration testing through creating a tunnel to saucelabs/browserstack.
