@@ -13,7 +13,7 @@ sudo npm install
 
 2) Run the application
 ```
-DEBUG=tweets:* npm start
+npm start
 ```
 
 ##Running JSHint and Unit tests
