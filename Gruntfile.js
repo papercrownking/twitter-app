@@ -4,11 +4,6 @@ module.exports = function(grunt) {
 
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
-        karma: {
-            test: {
-                configFile: 'karma.conf.js'
-            }
-        },
         mochaTest: {
           test: {
             options: {
@@ -25,7 +20,6 @@ module.exports = function(grunt) {
         }
     });
 
-    grunt.loadNpmTasks('grunt-karma');
     grunt.loadNpmTasks('grunt-mocha-test');
     grunt.loadNpmTasks('grunt-contrib-jshint');
 
